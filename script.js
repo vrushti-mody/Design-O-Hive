@@ -56,7 +56,7 @@ if (showreelDialog) {
   const playInline = () => {
     if (!playerFrame || playerFrame.querySelector('iframe')) return;
     if (window.location.protocol === 'file:' || window.location.origin === 'null') {
-      playerFrame.innerHTML = '<p class="showreel-local-note">Inline playback needs a hosted site address. Use “Open on YouTube” while previewing this local file.</p>';
+      playerFrame.innerHTML = '<p class="showreel-local-note">Inline showreel playback is available from the deployed site.</p>';
       return;
     }
     const player = document.createElement('iframe');
@@ -72,7 +72,6 @@ if (showreelDialog) {
     showreelDialog.showModal();
     playInline();
   });
-  showreelDialog.querySelector('.showreel-inline-play')?.addEventListener('click', playInline);
   document.querySelector('.dialog-close')?.addEventListener('click', () => showreelDialog.close());
   showreelDialog.addEventListener('click', (event) => {
     if (event.target === showreelDialog) showreelDialog.close();
