@@ -19,3 +19,5 @@
 .ui-icon{display:inline-block;width:1em;height:1em;flex:0 0 auto;vertical-align:-.14em;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}.ui-arrow-diagonal,.ui-arrow-up{width:15px;height:15px}.ui-chevron{width:19px;height:19px}.ui-play{width:13px;height:13px;fill:currentColor;stroke:none}.ui-close{width:20px;height:20px}.dialog-close{display:grid;place-items:center}.review-emoji{font-family:"Apple Color Emoji","Segoe UI Emoji","Noto Color Emoji",sans-serif;font-size:.84em;white-space:nowrap;vertical-align:.02em}
 @media(max-width:620px){.slider-button{width:44px;height:44px;min-width:44px;min-height:44px}.slider-button .ui-chevron{width:20px;height:20px}.service-icon .ui-arrow-diagonal{width:13px;height:13px}.button .ui-arrow-diagonal{width:14px;height:14px}}
 .ui-spark{width:20px;height:20px;color:#b08c43;stroke-width:1.35}.manifesto-symbol{display:grid;place-items:center}
+/* Prevent mobile browsers from applying their default blue button color. */
+button{color:inherit;-webkit-appearance:none;appearance:none}.showreel-button{color:var(--ink)}.slider-button{color:var(--ink)}
